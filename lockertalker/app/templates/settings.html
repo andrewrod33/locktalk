@@ -1,0 +1,39 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+    <link rel="stylesheet" type="text/css" href="static/css/application.css">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+    <title>Settings</title>
+    <script type "text/javascript" src="static/js/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="static/js/mustache.js"></script>
+
+    </head>
+
+
+        <h3>Please Select Your Favorite Team</h3>
+        <form method="POST" >
+        {% if message %}
+                <h1 style="background-color: red">{{ message }}</h1>
+                <form><input type="submit" value= "Submit"></form>
+        {% endif %}
+
+        {% for team in teams  %}
+            {% if team.team_id in user_teams %}CHECKED{% endif %}
+            {{  user_teams }}Huh
+            <div class="float">
+                <input type="checkbox" class="chkBox" name="team_{{ team.team_id }}" value="{{team.team_id}}"{% if team.team_id %}checked{% endif %}/>{{team.team_name}}
+            </div>
+        {% endfor %}
+            <input type="submit" id="sub" value="Submit">
+
+
+        {% if home %}
+
+        {% endif %}
+
+        </form>
+
+    </body>
+</html>
+
+<script src="http://player.espn.com/player.js?playerBrandingId=4ef8000cbaf34c1687a7d9a26fe0e89e&adSetCode=91cDU6NuXTGKz3OdjOxFdAgJVtQcKJnI&pcode=1kNG061cgaoolOncv54OAO1ceO-I&width=576&height=324&externalId=espn:9693684&thruParam_espn-ui[autoPlay]=false&thruParam_espn-ui[playRelatedExternally]=true"></script>

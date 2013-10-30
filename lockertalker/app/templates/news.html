@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}News {% endblock %}
+{% block dropdown %}
+    <li class="current-menu-item"><a href="/home"><span>News</span></a></li>
+    <li><a href="/settings"><span>Teams</span></a>
+    <li><a href="/settings/sources"><span>Sources</span></a>
+{% endblock %}
+{% block content %}
+
+{#<!-- middle -->#}
+{#<div class="middle">#}
+<div class="container_12">
+{##}
+{#	<!-- featured content -->#}
+	<div class="featured_block">
+    	<div class="col col_2_3">
+{#            <!-- tabs in text -->#}
+		<div class="featured_tabs">
+        </div>
+        <div class="col col_1_3">
+{#        	<div class="featured_sidebar">#}
+                <script type="text/javascript">
+						$(document).ready(function() {
+							$("a[rel^='prettyPhoto']").prettyPhoto({social_tools:false});
+						});
+				</script>
+{#            	<div class="featured_video">#}
+{#                    <script src="http://player.espn.com/player.js?playerBrandingId=4ef8000cbaf34c1687a7d9a26fe0e89e&adSetCode=91cDU6NuXTGKz3OdjOxFdAgJVtQcKJnI&pcode=1kNG061cgaoolOncv54OAO1ceO-I&width=576&height=324&externalId=espn:9784684&thruParam_espn-ui[autoPlay]=false&thruParam_espn-ui[playRelatedExternally]=false"width="300" height="185" alt=""></script>#}
+{#                </div>#}
+{#			</div>#}
+        </div>
+        <div class="clear"></div>
+    </div>
+{#	<!--/ featured content -->#}
+
+    <div>
+
+
+    <h1>News</h1>
+        {% for stories in news %}
+            {%  for story in stories|slice:":15" %}
+        <div class="post-list">
+        <div class="post-item post-white">
+            <div class="post-descr">
+                <h4><a target="_blank" href="{{ story.link }}">{{ story.headline }}</a></h4>
+                <p class="post-short">
+                <a target="_blank" href="{{ story.link }}" ><a href="{{ story.images }}" rel="prettyPhoto[iframe]"><img src="{{ story.images }}" width="120" height="100" alt="" /></a></a> {{ story.description }}
+                </p>
+                <div class="clear"></div>
+                <p>Source:{{ story.source_name }}</p>
+{#                <div class="clear"></div>#}
+                <form method="POST">
+                <p><a href="{{ story.link }}" class="button_black" target="_blank">Read</a>
+                <button name="name" class="button_blue"  value="team_{{ story.team_id }}_source_{{ story.source_id }}" type="submit"><span>Block Source</span></button></p>
+                </form>
+                </div>
+            </div>
+        </div>
+            {% endfor %}
+            {% endfor %}
+    <div class="clear"></div>
+
+    <!-- pagination -->
+    	<div class="tf_pagination">
+            <a class="page_next button_link" href="#"><span>Next</span></a>
+            <a class="page_prev button_link" href="#"><span>Previous</span></a>
+            <a href="#" class="page_current"><span>1</span></a> <a href="#"><span>2</span></a>  <a href="#"><span>3</span></a> <a href="#"><span>4</span></a> <a href="#"><span>5</span></a> <a href="#"><span>6</span></a> <a href="#"><span>7</span></a> <a href="#"><span>8</span></a> <a href="#"><span>9</span></a> &hellip;  <a href="#"><span>28</span></a>
+        </div>
+	<!--/ pagination -->
+
+
+
+    <div class="clear"></div>
+
+</div>
+</div>
+</div>
+{% endblock %}
+

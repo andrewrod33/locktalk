@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Teams{% endblock %}
+{% block dropdown %}
+    <li><a href="/home"><span>News</span></a></li>
+    <li class="current-menu-item"><a href="/settings"><span>Teams</span></a></li>
+    <li><a href="/settings/sources"><span>Sources</span></a></li>
+{% endblock %}
+
+{% block content %}
+<div class="container_12">
+<div class="clear"></div>
+  <h3>Please Select Your Favorite Team</h3>
+        <form method="POST" >
+        {% if message %}
+            <h1 style="background-color: red">{{ message }}</h1>
+        {% endif %}
+
+
+        {% for team in teams  %}
+            <div class="col col_1_3 ">
+            <div class="inner">
+                <input type="checkbox" class="chkBox" name="team_{{ team.team_id }}" value="{{team.team_id}}" {%  if team.id in user_teams %}checked{% endif  %}/>{{team.team_name}}
+            </div>
+            </div>
+        {% endfor %}
+        <div class="clear"></div>
+            <div class="col col_1_1 ">
+                <button type="submit" class="button_black"><span>Submit</span></button>
+{#            <input type="submit" id="sub" value="Submit">#}
+
+            </div>
+        </form>
+    </div>
+    <div class="clear"></div>
+
+
+{% endblock %}

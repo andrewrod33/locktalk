@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+
+
+{% for stories in news %}
+    {%  for story in stories %}
+
+
+        {{ story.headline }}
+
+{#            <li>{{ story.team_id }}</li>#}
+            {{ story.description }}
+           <a href = "{{ story.link }}">Read</a></li>
+         <img src="{{ story.images }}
+        {{ story.date }}</li>
+        Source:{{ story.source }}
+    {% endfor %}
+
+ {% endfor %}
+
+
+
+
+</body>
+</html>

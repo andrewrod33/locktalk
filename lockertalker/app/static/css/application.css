@@ -1,0 +1,114 @@
+#img{
+	background-image: url("http://www.lewallpaper.com/newresolution/1920x1440-nature-with-flowers-free-football-field-grungy-athlete.jpg");
+	width: 98%;
+}
+.col-xs-6,col-md-4{
+	float: right;
+}
+
+#logo{
+	font-size: 25px;
+}
+.jumbotron,.page-header{
+	background-color: silver;
+}
+.media-object{
+	height: 30px;
+	width: 30px;
+}
+
+.navbar,.navbar-default{
+	background-color: silver;
+}
+
+form{
+	margin-top: 150px;
+	margin-left:auto;
+	margin-right:auto;
+	width: 50%;
+}
+.news-img{
+	width: 200px;
+	height: 400px;
+}
+
+.row{
+	background-color: grey;
+}
+.col-lg-4{
+	width: 80%;
+}
+.pager{
+	clear:both;
+}
+
+.main{
+	clear:both;
+	color:white;
+}
+#description{
+	text-align: center;
+	display:inline;
+	background-color: black;
+	color:red;
+}
+#setTitle{
+	clear:both;
+}
+#main{
+	list-style-type: none;
+}
+#gatorade{
+	background-color: black;
+	background-image: url("http://cdn0.sbnation.com/campaigns_images/14339/827474794_Madden25-Reskin-LEFT.jpg"),url("http://cdn0.sbnation.com/campaigns_images/14337/838506424_Madden25-Reskin-RIGHT.jpg");
+	background-position: left top, right top, top center;
+	background-repeat: no-repeat, no-repeat, repeat-x;
+	background-size: auto, auto, auto;
+	background-attachment: fixed, fixed, fixed;
+}
+.font{
+	color:#C2B2B2;
+}
+
+.middle{
+	text-align: center;
+	width:10em;
+	display:inline;
+	background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+	color:white;
+	word-wrap: break-word;
+}
+.espnBoxes{
+	 text-align: left;
+	 display:inline;
+	 margin-right: 10px;
+}
+#newsHead{
+	font-size:40px;
+	color:white;
+	text-align:center;
+}
+.float{
+	width: 300px;
+	float:left;
+
+}
+#sub{
+	float: left;
+	clear: left;
+	width: 100px;
+	margin: 10px auto;
+	padding: 2px 5px;
+}
+
+#news { width: 800px; margin: 0 auto; }
+#news > li { 
+	list-style-type: none; border: 1px dotted grey; margin: 10px; padding: 10px; 
+	background: rgba(255,255,255,0.2);
+}
+#news > li ul li { list-style-type: none; margin: 0; padding: 0; display: inline-block; }
+#news > li ul li img { max-height: 200px; }
+
+
