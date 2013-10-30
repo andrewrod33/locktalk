@@ -26,7 +26,7 @@
       <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lockertalker/app/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="15" selection-start="32" selection-end="32" vertical-scroll-proportion="37.916668" vertical-offset="925" max-vertical-offset="1530">
+            <state line="1" column="15" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="925" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
@@ -41,10 +41,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sources_views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sources_views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lockertalker/app/views/sources_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="21" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.6173285" vertical-offset="213" max-vertical-offset="780">
+            <state line="42" column="21" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.0" vertical-offset="213" max-vertical-offset="780">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myapp/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="6" selection-start="281" selection-end="281" vertical-scroll-proportion="0.23809524" vertical-offset="0" max-vertical-offset="567">
               <folding />
             </state>
           </provider>
@@ -81,6 +90,7 @@
         <option value="$PROJECT_DIR$/lockertalker/manage.py" />
         <option value="$PROJECT_DIR$/lockertalker/app/templates/index.html" />
         <option value="$PROJECT_DIR$/.setup.py.swp" />
+        <option value="$PROJECT_DIR$/myapp/setup.py" />
       </list>
     </option>
   </component>
@@ -135,6 +145,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="locktalk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -145,8 +169,8 @@
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -247,9 +271,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -271,6 +292,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -343,14 +367,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="22" width="1211" height="690" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24607763" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24607763" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -411,7 +435,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lockertalker/app/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="15" selection-start="32" selection-end="32" vertical-scroll-proportion="37.916668" vertical-offset="925" max-vertical-offset="1530">
+        <state line="1" column="15" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="925" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
@@ -457,7 +481,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lockertalker/app/views/sources_views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="21" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.6173285" vertical-offset="213" max-vertical-offset="780">
+        <state line="42" column="21" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.0" vertical-offset="213" max-vertical-offset="780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="6" selection-start="281" selection-end="281" vertical-scroll-proportion="0.23809524" vertical-offset="0" max-vertical-offset="567">
           <folding />
         </state>
       </provider>
